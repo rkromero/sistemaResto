@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Panel de Control</h2>
+        <div id="clientManagement">
+            <h3>Gestión de Clientes</h3>
+            <form id="clientForm">
+                <input type="text" id="clientName" placeholder="Nombre del Cliente" required>
+                <input type="email" id="clientEmail" placeholder="Email del Cliente" required>
+                <button type="submit">Agregar Cliente</button>
+            </form>
+            <ul id="clientList"></ul>
+        </div>
+        <div id="orderManagement">
+            <h3>Gestión de Pedidos</h3>
+            <form id="orderForm">
+                <input type="number" id="clientId" placeholder="ID del Cliente" required>
+                <input type="number" id="orderAmount" placeholder="Monto del Pedido" required>
+                <button type="submit">Agregar Pedido</button>
+            </form>
+            <ul id="orderList"></ul>
+        </div>
+        <div id="paymentManagement">
+            <h3>Gestión de Pagos</h3>
+            <form id="paymentForm">
+                <input type="number" id="paymentClientId" placeholder="ID del Cliente" required>
+                <input type="number" id="paymentAmount" placeholder="Monto del Pago" required>
+                <button type="submit">Registrar Pago</button>
+            </form>
+            <ul id="paymentList"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
